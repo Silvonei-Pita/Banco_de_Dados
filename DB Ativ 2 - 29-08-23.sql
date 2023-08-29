@@ -51,7 +51,7 @@ DROP TABLE Livraria.Livros;
 -- 1 - Trazer o nome do livro, autor e valor Kindle somente de livros com valores menores que R$ 40,00;
 SELECT ID, Livro, Autor, Valor_Kindle 
 FROM Livraria.Livros
-WHERE Valor_Kindle <= 40;
+WHERE Valor_Kindle < 40;
 
 -- 2 - Trazer o nome do livro e autor onde o ano de publicação seja maior que 2017, a editora seja Sextante e o sexo do autor seja feminino;
 SELECT ID, Livro, Autor
